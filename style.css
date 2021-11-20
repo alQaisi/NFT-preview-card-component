@@ -60,6 +60,7 @@ body{
 }
 .title{
     margin-block-end:15px;
+    font-weight:600;
 }
 .desc{
     font-size:85%;

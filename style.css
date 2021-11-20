@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Rubik:wght@300;400;500&display=swap');
+body{
+    margin:15px 0 20px 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height:100vh;
+    min-height:100vh;
+    display: grid;
+    place-items: center;
+    font-size: 1.3rem;
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+    color: white;
+}
+.card{
+    position: relative;
+    width: 90%;
+    max-width:360px;
+    height:fit-content;
+    padding:20px 25px;
+    box-sizing: border-box;
+    background: hsl(216, 50%, 16%);
+    border-radius:15px;
+}
+.image-container{
+    position: relative;
+    cursor: pointer;
+}
+.image{
+    width:100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius:9px;
+}
+.overlay{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top:0;
+    border-radius:9px;
+    opacity: 0;
+    transition: opacity .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: grid;
+    place-items: center;
+}
+.color-layer{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.5;
+}
+#view{
+    position: absolute;
+}
+.image-container:hover .overlay{
+    opacity:1;
+}
+.title{
+    margin-block-end:15px;
+}
+.desc{
+    font-size:85%;
+    letter-spacing:.5px;
+    line-height:1.5rem;
+    width: 100%;
+    display: block;
+    word-wrap: break-word;
+}
+.last-item,.items{
+    margin:25px 0;
+    font-size:.95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time,.quant{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+#ctitle,.desc,.time{
+    color: hsl(215, 51%, 70%);
+    font-weight:300;
+}
+hr{
+    opacity: .12;
+}
+.last-item{
+    margin:20px 0 10px 0;
+    justify-content: start;
+}
+.avatar{
+    box-sizing: border-box;
+    width:35px;
+    border-radius:100%;
+    border:1px solid white;
+    margin-right: 17px;
+}
+.last-item span{
+    font-weight: 400;
+    font-size: 1rem;
+}
+#ctitle{
+    color: hsl(215, 51%, 70%);;
+}
+.title:hover,#name:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+@media only screen and (max-width:420px){
+    body{
+        font-size:1.2rem;
+    }
+    .card{
+        width: 92%;
+    }
+}
+@media only screen and (max-width:330px){
+    .card{
+        padding:20px 12px;
+    }
+}

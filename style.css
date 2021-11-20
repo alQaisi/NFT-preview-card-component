@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Rubik:wght@300;400;500&display=swap');
 body{
-    margin:15px 0 20px 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -15,6 +16,7 @@ body{
 }
 .card{
     position: relative;
+    margin:15px 0;
     width: 90%;
     max-width:360px;
     height:fit-content;

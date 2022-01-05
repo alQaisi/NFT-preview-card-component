@@ -67,8 +67,8 @@ img{
     opacity:1;
 }
 .title{
-    margin-block-end:15px;
     font-weight:600;
+    font-size: 1.75rem;
 }
 .desc{
     font-size:85%;
@@ -78,7 +78,6 @@ img{
     display: block;
     word-wrap: break-word;
 }
-
 .last-item,.items{
     margin:25px 0;
     font-size:.95rem;
